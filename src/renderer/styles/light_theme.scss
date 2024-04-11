@@ -1,9 +1,9 @@
 /*
  *=========================================================================
- * ERWT Light Theme
+ * KOBI Light Theme
  *=========================================================================
  *
- * Light theme for ERWT application.
+ * Light theme for KOBI application.
  */
 
 body:not(.dark-mode) {
@@ -44,8 +44,8 @@ body:not(.dark-mode) {
   --titlebar-popup-item-hover-shortcut-color: var(--app-accent-color);
   --titlebar-popup-item-hover-bgcolor: #d6dadea2;
 
-  // ERWT
-  --erwt-heading-color: #282828;
+  // KOBI
+  --kobi-heading-color: #282828;
 
   // Overrides
   .main-teaser {
@@ -61,7 +61,7 @@ body:not(.dark-mode) {
     background: #ffffffa2;
     box-shadow: 0 2px 4px #00000005;
 
-    &>span {
+    & > span {
       color: #999999;
     }
   }

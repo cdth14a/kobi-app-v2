@@ -4,11 +4,11 @@ import WindowFrame from '@renderer/window/WindowFrame';
 import Application from '@components/Application';
 
 // Say something
-console.log('[ERWT] : Renderer execution started');
+console.log('[KOBI] : Renderer execution started');
 
 // Application to Render
 const app = (
-  <WindowFrame title='ERWT Boilerplate' platform='windows'>
+  <WindowFrame title='KOBI App' platform='windows'>
     <Application />
   </WindowFrame>
 );

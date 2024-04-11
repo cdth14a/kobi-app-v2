@@ -47,10 +47,10 @@ const Application: React.FC = () => {
   }
 
   return (
-    <div id='erwt'>
+    <div id='kobi'>
       <div className='header'>
         <div className='main-heading'>
-          <h1 className='themed'>ERWT - Electron Boilerplate</h1>
+          <h1 className='themed'>KOBI - Electron Boilerplate</h1>
         </div>
         <div className='main-teaser'>
           Desktop Application with Electron, React, Webpack & TypeScript
@@ -64,9 +64,9 @@ const Application: React.FC = () => {
           </div>
           <div className='item'>
             <div>
-              <img className='item-icon' src={icons.erwt} /> ERWT
+              <img className='item-icon' src={icons.kobi} /> KOBI
             </div>
-            <span>{versions?.erwt}</span>
+            <span>{versions?.kobi}</span>
           </div>
           <div className='item'>
             <div>

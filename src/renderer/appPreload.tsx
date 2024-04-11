@@ -1,7 +1,7 @@
 import '@main/window/windowPreload';
 
 // Say something
-console.log('[ERWT] : Preload execution started');
+console.log('[KOBI] : Preload execution started');
 
 // Get versions
 window.addEventListener('DOMContentLoaded', () => {
@@ -9,8 +9,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const { env } = process;
   const versions: Record<string, unknown> = {};
 
-  // ERWT Package version
-  versions['erwt'] = env['npm_package_version'];
+  // KOBI Package version
+  versions['kobi'] = env['npm_package_version'];
   versions['license'] = env['npm_package_license'];
 
   // Process versions

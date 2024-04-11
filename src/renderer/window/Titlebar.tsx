@@ -1,16 +1,22 @@
 /**
- * Copyright (c) 2021, Guasam
+ * Copyright (c) 2024, Cdth14a
  *
  * This software is provided "as-is", without any express or implied warranty. In no event
  * will the authors be held liable for any damages arising from the use of this software.
  * Read the LICENSE file for more details.
  *
- * @author  : guasam
+ * @author  : cdth14a
  * @project : Electron Window
  * @package : Window Titlebar (Component)
  */
 
-import React, { createRef, useContext, useEffect, useRef, useState } from 'react';
+import React, {
+  createRef,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import titlebarMenus from '@main/window/titlebarMenus';
 import classNames from 'classnames';
 import WindowControls from './WindowControls';
@@ -54,7 +60,9 @@ const Titlebar: React.FC<Props> = (props) => {
       if (activeMenuIndex.current != null) {
         if (
           menusRef[activeMenuIndex.current].current &&
-          !menusRef[activeMenuIndex.current].current?.contains(event.target as Node)
+          !menusRef[activeMenuIndex.current].current?.contains(
+            event.target as Node,
+          )
         ) {
           // console.log('You clicked outside of me!');
           closeActiveMenu();
@@ -93,9 +101,9 @@ const Titlebar: React.FC<Props> = (props) => {
       menusRef[activeMenuIndex.current].current?.classList.toggle('active');
       menusRef[index].current?.classList.toggle('active');
       menusRef[index].current?.parentElement?.classList.toggle('active');
-      menusRef[activeMenuIndex.current].current?.parentElement?.classList.toggle(
-        'active',
-      );
+      menusRef[
+        activeMenuIndex.current
+      ].current?.parentElement?.classList.toggle('active');
 
       activeMenuIndex.current = index;
     }
@@ -104,7 +112,9 @@ const Titlebar: React.FC<Props> = (props) => {
   function closeActiveMenu() {
     if (activeMenuIndex.current != null) {
       menusRef[activeMenuIndex.current].current?.classList.remove('active');
-      menusRef[activeMenuIndex.current]?.current?.parentElement?.classList.remove('active');
+      menusRef[
+        activeMenuIndex.current
+      ]?.current?.parentElement?.classList.remove('active');
       activeMenuIndex.current = null;
     }
   }

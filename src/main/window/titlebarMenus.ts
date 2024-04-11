@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2021, Guasam
+ * Copyright (c) 2024, Cdth14a
  *
  * This software is provided "as-is", without any express or implied warranty. In no event
  * will the authors be held liable for any damages arising from the use of this software.
  * Read the LICENSE file for more details.
  *
- * @author  : guasam
+ * @author  : cdth14a
  * @project : Electron Window
  * @package : Titlebar Menu Items
  */
@@ -130,7 +130,7 @@ const titlebarMenus: TitlebarMenu[] = [
       {
         name: 'Maximize',
         action: 'toggle_maximize',
-        shortcut: 'Toggle'
+        shortcut: 'Toggle',
       },
       {
         name: 'Minimize',
@@ -148,10 +148,10 @@ const titlebarMenus: TitlebarMenu[] = [
     name: 'Credits',
     items: [
       {
-        name: 'Guasam',
+        name: 'Cdth14a',
         action: 'open_url',
-        value: 'https://github.com/guasam',
-        shortcut: '@guasam',
+        value: 'https://github.com/cdth14a',
+        shortcut: '@cdth14a',
       },
     ],
   },

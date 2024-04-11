@@ -8,9 +8,9 @@ module.exports = {
     // Create asar archive for main, renderer process files
     asar: true,
     // Set executable name
-    executableName: 'ERWT',
+    executableName: 'KOBI',
     // Set application copyright
-    appCopyright: '© 2021-2024 Codesbiome, Guasam',
+    appCopyright: '© 2024 Cdth14a',
     // Set application icon
     icon: path.resolve('assets/images/appIcon.ico'),
   },
@@ -21,7 +21,7 @@ module.exports = {
       // Windows applications and is therefore the most user friendly you can get.
       name: '@electron-forge/maker-squirrel',
       config: {
-        name: 'electron-react-typescript-webpack-2022',
+        name: 'kobi-app',
       },
     },
     {

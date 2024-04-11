@@ -1,7 +1,7 @@
 import chrome from '@assets/icons/chrome.png';
 import react from '@assets/icons/react.png';
 import typescript from '@assets/icons/typescript.png';
-import erwt from '@assets/icons/erwt.png';
+import kobi from '@assets/icons/kobi.png';
 import electron from '@assets/icons/electron.png';
 import nodejs from '@assets/icons/nodejs.png';
 import webpack from '@assets/icons/webpack.png';
@@ -11,7 +11,7 @@ export default {
   chrome,
   react,
   typescript,
-  erwt,
+  kobi,
   electron,
   nodejs,
   webpack,

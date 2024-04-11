@@ -1,12 +1,14 @@
 /**
  * Licensed under the MIT License. See LICENSE file in the project root for license information.
- * Copyright (c) 2022 Codesbiome, guasam
+ * Copyright (c) 2024 Cdth14a, cdth14a
  *
- * @author  : guasam
- * @project : ERWT Boilerplate
+ * @author  : cdth14a
+ * @project : KOBI App
  * @package : Application Sass Stylesheet
 */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import './dark_theme.scss';
 @import './light_theme.scss';
 
@@ -57,8 +59,7 @@ body {
 /* Grid texture */
 body {
   background-size: 32px 32px;
-  background-image:
-    linear-gradient(to right, #7070700d 1px, transparent 1px),
+  background-image: linear-gradient(to right, #7070700d 1px, transparent 1px),
     linear-gradient(to bottom, #7070700d 1px, transparent 1px);
 }
 
@@ -102,7 +103,7 @@ button {
     background: var(--button-active-bgcolor);
   }
 
-  &>span {
+  & > span {
     color: var(--button-badge-color);
     background-color: var(--button-badge-bgcolor);
     font-size: 12px;
@@ -144,7 +145,7 @@ button {
   h1 {
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--erwt-heading-color);
+    color: var(--kobi-heading-color);
     line-height: 1;
     text-transform: uppercase;
   }
@@ -175,7 +176,7 @@ button {
 }
 
 .main-teaser:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   width: calc(100% + 40px);
@@ -209,7 +210,7 @@ button {
   box-sizing: border-box;
   border-radius: 4px;
 
-  &>* {
+  & > * {
     display: flex;
   }
 
@@ -220,19 +221,19 @@ button {
     opacity: 0.8;
   }
 
-  &>span {
+  & > span {
     color: gray;
     text-align: right;
   }
 }
 
-#erwt {
+#kobi {
   // user-select: none;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
-  background: var(--erwt-gradient);
+  background: var(--kobi-gradient);
 
   .header {
     padding: 4rem 2rem 0rem 2rem;
